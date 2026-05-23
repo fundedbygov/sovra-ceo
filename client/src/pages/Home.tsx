@@ -101,10 +101,10 @@ export default function Home() {
               <div className="space-y-4">
                 <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold leading-tight">
                   <span className="block">SOVRA</span>
-                  <span className="block text-accent neon-glow">COMING SOON</span>
+                  <span className="block text-accent neon-glow">ASIA'S FIRST MEMECOIN TRADING PLATFORM</span>
                 </h1>
                 <p className="text-lg sm:text-xl text-muted-foreground leading-relaxed max-w-md">
-                  The future of trading is here. Secure your exclusive access to the platform that's redefining digital wealth.
+                  The future of Memecoin's are here. Secure your exclusive access to the platform that's redefining digital wealth.
                 </p>
               </div>
 
