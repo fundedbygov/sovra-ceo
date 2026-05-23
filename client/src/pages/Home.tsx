@@ -74,6 +74,7 @@ export default function Home() {
                     autoPlay
                     loop
                     playsInline
+                    preload="auto"
                   />
                   {/* Neon border glow effect */}
                   <div className="absolute inset-0 rounded-lg pointer-events-none" style={{
