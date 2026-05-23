@@ -3,6 +3,7 @@ import { Input } from "@/components/ui/input";
 import { useState } from "react";
 import { Mail, ArrowRight } from "lucide-react";
 import { toast } from "sonner";
+import heroVideo from "@/assets/hero.mp4";
 
 /**
  * SOVRA Coming Soon Landing Page
