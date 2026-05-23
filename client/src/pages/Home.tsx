@@ -3,7 +3,6 @@ import { Input } from "@/components/ui/input";
 import { useState } from "react";
 import { Mail, ArrowRight } from "lucide-react";
 import { toast } from "sonner";
-import heroVideo from "@/assets/hero.mp4";
 
 /**
  * SOVRA Coming Soon Landing Page
@@ -41,6 +40,17 @@ export default function Home() {
 
   return (
     <div className="min-h-screen bg-background text-foreground overflow-hidden">
+      {/* Sticky Top Banner */}
+      <div className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-md border-b border-accent/30 py-4">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 className="text-center text-2xl sm:text-3xl font-bold tracking-wider">
+            <span className="text-accent neon-glow">COMING SOON</span>
+          </h2>
+        </div>
+      </div>
+
+      {/* Add padding to main content to account for fixed header */}
+      <div className="pt-24"></div>
       {/* Animated background grid */}
       <div 
         className="fixed inset-0 opacity-10 pointer-events-none"
@@ -69,14 +79,12 @@ export default function Home() {
                 {/* Video container with aspect ratio */}
                 <div className="relative w-full bg-black rounded-lg overflow-hidden" style={{ paddingBottom: "56.25%" }}>
                   <video
-                    src={heroVideo}
+                    src="/manus-storage/SnfpZlTD0mb0yR1D_f41e7a8c.mp4"
                     className="absolute inset-0 w-full h-full object-cover"
                     autoPlay
+                    muted
                     loop
                     playsInline
-                    preload="auto"
-                    onLoadedData={(e) => e.currentTarget.play()}
-                    controls
                   />
                   {/* Neon border glow effect */}
                   <div className="absolute inset-0 rounded-lg pointer-events-none" style={{
@@ -104,7 +112,7 @@ export default function Home() {
                   <span className="block text-accent neon-glow">ASIA'S FIRST MEMECOIN TRADING PLATFORM</span>
                 </h1>
                 <p className="text-lg sm:text-xl text-muted-foreground leading-relaxed max-w-md">
-                  The future of Memecoin's are here. Secure your exclusive access to the platform that's redefining digital wealth.
+                  The future of Memecoin trading is here. Secure your exclusive access to the platform that's redefining digital wealth.
                 </p>
               </div>
 
